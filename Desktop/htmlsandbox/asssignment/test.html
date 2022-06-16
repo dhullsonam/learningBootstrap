@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.css">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var fname = document.getElementById("name")
+            var x = fname.value;
+            var match = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (x == "") {
+                fname.classList.add("is-invalid")
+                fname.classList.remove("is-valid")
+                document.getElementById("fn").innerHTML = "can not be empty";
+
+
+            }
+            else if(!match.test(x)){
+                fname.classList.add("is-invalid")
+                document.getElementById("fn").innerHTML = "invalid name";
+                fname.classList.remove("is-valid");
+                
+            }
+            else{
+                 fname.classList.add("is-valid")
+                fname.classList.remove("is-invalid")
+            }
+                
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="name" id="name" class="form-control">
+            <div class="valid-feedback" >valid</div>
+            <div class="invalid-feedback" id="fn">invalid</div>
+        </div>
+        <button onclick="validateForm()" type="button" class="btn btn-success">submit</button>
+    </form>
+</body>
+
+</html>

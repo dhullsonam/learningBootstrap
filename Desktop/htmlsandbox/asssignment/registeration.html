@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="css/regist.css">
+    <script src="js/regist.js"></script>
+    <!-- <script>
+        function validateEmail() {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script> -->
+</head>
+
+<body class="bg-info">
+    <div class="container border bg-light">
+        <div class="d-flex align-items-center justify-content-center" style="height: 850px">
+
+
+            <div class="col-8">
+
+                <h2>Registeration form</h2>
+                <hr />
+
+                <form id="myForm" class="">
+                    <div class="row">
+                        <div class="form-group col">
+                            <input class="form-control " type="text" placeholder="First Name" id="firstName"
+                                name="fname" />
+                            <div class="invalid-feedback" id="fn">please fill first Name</div>
+                            <div class="valid-feedback"> </div>
+
+                        </div>
+
+                        <div class="form-group col">
+                            <input class="form-control" type="text" placeholder="Last Name" id="lastname" />
+                            <div class="invalid-feedback" id="ln">please fill last Name</div>
+                            <div class="valid-feedback"> </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Enter a Valid email-address" id="email" />
+                        <div class="invalid-feedback" id="eid" >please fill first Name</div>
+                        <div class="valid-feedback"> </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="password" id="pwd" />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="confirm password" class="pwd1" />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="date" />
+                    </div>
+
+                    <label>Gender</label>
+
+                    <div class="form-check form-check-inline row_fun">
+
+                        <span class="box_fun border">
+                            <label class="cen">Male</label>
+                            <input type="radio" class="form-check-label" />
+                        </span>
+
+                        <span class="box_fun border">
+                            <label class="cen">Female</label>
+                            <input type="radio" class="form-check-label" />
+
+                        </span>
+
+                        <span class="box_fun border">
+                            <label class="cen"> Custom</label>
+                            <input type="radio" class="form-check-label" />
+
+                        </span>
+
+                    </div>
+                    <br />
+
+
+                    <div class="text-center">
+                        <small id="emailHelp" class="form-text text-muted">By clicking Sign Up, you agree to our Terms,
+                            Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at
+                            any time.
+
+                        </small>
+                        <br />
+                        <button type="button" onclick="validationForm()" class="btn btn-success mb-2" id="sub"
+                            value="Submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

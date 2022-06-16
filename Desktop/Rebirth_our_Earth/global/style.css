@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+}
+    body {
+      height: 100%;
+    }
+
+    .parallax {
+      background-image: url('../images/globalwarming.jpg');
+      height: 1000px;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+      }
+    }
+
+    .navbar {
+      height: 50px;
+      width: 100%;
+      position: fixed;
+    }
+
+    .navbar img {
+      padding: 25px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      padding: 30px;
+      float: right;
+      font-size: 20px;
+      color: white;
+    }
+
+    .Content-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: white;
+    }
+
+    .Content-child1 {
+      top: 120%;
+      text-align: center;
+    }
+
+    .parallax1 {
+      background-image: url('https://images.theconversation.com/files/355011/original/file-20200827-18-1ba605p.jpg?ixlib=rb-1.1.0&rect=0%2C61%2C3086%2C2028&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip');
+    }
+
+    .Content-child2 {
+      top: 180%;
+      text-align: center;
+
+    }
+
+    .Content-child3 {
+      top: 270%;
+      text-align: center;
+
+      font-size: 32px;
+    }
+
+    .Content-child4 {
+      top: 360%;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .parallax2 {
+      background-image: url('https://th-thumbnailer.cdn-si-edu.com/UF1lP8kbkEtu-WQpvHvN3_Y1x9Q=/1000x750/filters:no_upscale():focal(700x527:701x528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/74/b6/74b691f3-4f1e-4068-9f2a-0702cdcc47e3/methanesat_auto1_web.jpg');
+    }
+
+    .Content-child5 {
+      top: 500%;
+      text-align: center;
+      font-size: 30px;
+    }
+ 

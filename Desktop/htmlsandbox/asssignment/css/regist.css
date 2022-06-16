@@ -1,0 +1,20 @@
+   
+.box_fun{
+  border: 0.5px solid black;
+  flex:1;
+}
+.box_fun:nth-of-type(2) {
+  margin:0px 10px 0px 10px;
+}
+
+.row_fun{
+  display:flex;
+  width:100%;
+}
+.cen{
+    padding: 2px 0px 0px 40px;
+}
+.form-check-label{
+    float: right;
+    margin: 8px;
+}
